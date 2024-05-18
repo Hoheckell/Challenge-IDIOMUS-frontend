@@ -1,0 +1,119 @@
+.leaderboardtable tr {
+    background-color: white;
+}
+
+.lbcontainer {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.lbtablecontainer {
+    overflow-x: auto;
+    margin: 0 auto;
+    width: 90%;
+}
+
+.leaderboardtable {
+    width: 90%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin-left: auto;
+    margin-right: auto;
+    color: #4b5c68;
+    border-color: #e4edf2;
+}
+
+.leaderboardtable thead tr {
+    background-color: #e4edf2;
+    height: 40px !important;
+    font-size: 12px;
+}
+
+.leaderboardtable tbody td {
+    font-size: 14px;
+}
+
+.leaderboardtable tbody tr {
+    height: 70px;
+    border-bottom: 1px solid #E4EDF2;
+}
+
+.scheduletable thead tr {
+    background-color: #e3edf3;
+    font-size: 12px !important;
+}
+
+.centerColumn {
+    text-align: center;
+    vertical-align: middle;
+}
+.toleftColumn {
+    text-align: start;
+    vertical-align: middle;
+}
+
+.teamcolumn {   
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-weight: bold;
+    font-size: 16px;
+    padding-left: 10px;
+}  
+
+.teamnameth {
+    padding-left: 10px;;
+}
+
+.goalDiferenceColumn{
+    text-align: center;
+    vertical-align: middle;
+    display: none; 
+}
+
+.goalsForColumn {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.goalsAgainstColumn {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.teamcolumn img{
+    margin-right: 10px;
+}
+
+.pointsColumn {
+    color: #025FEB;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+/* */
+
+@media (max-width: 1000px) {
+}
+
+@media (max-width: 700px) {
+}
+
+@media (max-width: 500px) {
+    .goalDiferenceColumn {
+        text-align: center; 
+        display: table-cell;
+    }
+    
+    .goalsForColumn {
+        display: none; 
+    }
+    
+    .goalsAgainstColumn {
+        display: none; 
+    }
+}

@@ -1,6 +1,57 @@
-.welcomeMessage {
-    margin: 120px auto;
-    width: 50%;
-    text-align: left;
-    font-size: 24px;
+
+.navigation {
+  background-color: #025feb;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 60px;
+  font-size: 16px;
+  color: #FFFFFF;
+  min-height: 60px;
+  padding-right: 4px;
+  font-size: 16px;
+  font-weight: bold;
+} 
+
+h1 {
+  font-size: 24px;
+  color: #182C62;
+  margin-bottom: 20px;
 }
+
+.logo {
+  vertical-align: middle;
+  width: 110px;  
+  margin-left: 40px;
+}
+
+.menuimg {
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+  margin-right: 2px;
+}
+
+.menulink { 
+  margin-right: 40px;
+}
+
+nav a:link {
+  color: #FFFFFF;
+  text-decoration: none;
+} 
+
+nav a:link {
+  color: #FFFFFF;
+  text-decoration: none;
+} 
+
+nav a:active {
+  color: #FFFFFF;
+  text-decoration: none;
+} 
+
+nav a:visited {
+  color: #FFFFFF;
+  text-decoration: none;
+} 

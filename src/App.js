@@ -1,16 +1,41 @@
-
-import style from "./App.module.css";
+import { Link, Route, Switch } from "react-router-dom";
+import Schedule from "./components/Schedule";
+import Leaderboard from "./components/Leaderboard";
+import NotFound from "./components/NotFound";
+import styles from "./App.module.css";
 
 function App() {
   return (
-    <div className={style.welcomeMessage}>
-      Hi there 👋, <br /><br />      
-      Welcome to your test task. <br /><br />
-      Before you begin make sure to read the README file from the repository to make sure that your environment is properly set up. <br /><br />
-      Also please make sure to read the challenge instructions carefully. We advice that you push your source code to the repository frequently to avoid any loss of work.<br />
-      Once you are ready to submit the work, just go back to the challenge instructions page and click the "Submit Challenge" button.<br /><br />      
-      Good Luck and Have Fun! 🤞<br /><br /><br /><br />
-      <em><strong>NOTE:</strong> This page is only a welcome message and you should overwrite this page with the actuall solution implementation.</em>
+    <div>
+      <nav className={styles.navigation}>
+        <div >
+          <Link to="/">
+            <img src={`${process.env.PUBLIC_URL}/Images/logo.svg`} alt="Logo" className={styles.logo} />
+          </Link>
+        </div>
+        <div>
+          <Link to="/schedule" className={styles.menulink}>
+            <img
+              src={`${process.env.PUBLIC_URL}/Images/schedule.png`}
+              alt="Icon 1" className={styles.menuimg}
+            />
+            Schedule
+          </Link>
+          <Link to="/leaderboard" className={styles.menulink}>
+            <img
+              src={`${process.env.PUBLIC_URL}/Images/leaderboard.png`}
+              alt="Icon 1" className={styles.menuimg}
+            />
+            Leaderboard
+          </Link>
+        </div>
+      </nav>
+      <Switch>
+        <Route exact path="/" component={Schedule} />
+        <Route exact path="/schedule" component={Schedule} />
+        <Route path="/leaderboard" component={Leaderboard} />
+        <Route component={NotFound} />
+      </Switch>
     </div>
   );
 }

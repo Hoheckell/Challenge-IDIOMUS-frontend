@@ -1,0 +1,133 @@
+
+
+tr:nth-child(odd) {
+  background-color: white;
+}
+
+tr:nth-child(even) {
+  background-color: #f6f7f7;
+}
+
+.container {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.tablecontainer {
+  overflow-x: auto;
+  margin: 0 auto; /* Centraliza horizontalmente */
+  width: 90%;
+}
+
+.scheduletable {
+  width: 90%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin-left: auto;
+  margin-right: auto;
+  color: #4b5c68;
+}
+
+.scheduletable thead tr {
+  background-color: #e4edf2; 
+  height: 40px !important;
+  font-size: 12px;
+}
+
+.scheduletable tbody td { 
+  font-size: 14px;
+}
+
+
+.scheduletable tbody tr {
+  height: 70px;  
+  border-bottom: 1px solid #E4EDF2;
+}
+
+
+.scheduletable thead tr { 
+  background-color: #e3edf3;
+  font-size: 12px !important; 
+}
+
+.datetimeth{ 
+  padding-left: 10px;
+  width: 15%;
+}
+
+.datetimetd{ 
+  padding-left: 10px;  
+}
+
+.datetimetext {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; 
+  text-align: right;
+}
+
+.tableimage {
+  margin: 0px 5px;
+}
+
+.hometeamheader {
+  text-align: right;
+}
+.awayteamheader {
+  text-align: left;
+}
+.hometeam {   
+  justify-content: flex-end;  
+}
+
+.awayteam { 
+  justify-content: flex-start;  
+}
+
+.hometeam, .awayteam {
+  display: flex;
+  align-items: center; /* Centraliza verticalmente o texto e a imagem */
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.score {
+  text-align: center;
+  font-weight: bold;
+  font-size: 16px !important;
+  text-wrap: nowrap;
+}
+
+.datedata {
+  font-size: 14px;
+  width: 15%; 
+} 
+
+.stadiumdata {
+  text-align: left;
+  width: 20%
+}
+
+/* Breakpoint para telas de até 1000px de largura */
+@media (max-width: 1000px) {
+}
+
+@media (max-width: 700px) {
+  .stadiumdata {
+    display: none;
+  }
+  
+}
+
+@media (max-width: 500px) {
+  .stadiumdata {
+    display: none;
+  }
+
+  .datetime {
+    display: none;
+  }
+
+}
